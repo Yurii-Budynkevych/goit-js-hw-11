@@ -24,6 +24,7 @@ async function onSubmit(evt) {
   if (serchQuery === '') {
     return;
   }
+  refs.loadBtn.classList.add('is-hidden');
   const imgSet = await fetchPictures(serchQuery, page);
   if (imgSet.data.hits.length === 0) {
     Notiflix.Notify.info(MSG);
