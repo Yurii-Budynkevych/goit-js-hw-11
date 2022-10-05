@@ -2,7 +2,7 @@ import axios from 'axios';
 const BASE_URL = 'https://pixabay.com/api/';
 const KEY = '?key=30371799-820dc93a3ae10a20aac07ac2b';
 const SETTINGS =
-  'image_type=photo,orientation=horizontal,safesearch=true&per_page=4';
+  'image_type=photo,orientation=horizontal,safesearch=true&per_page=40';
 
 export const fetchPictures = async function (name, page) {
   try {
